@@ -15,24 +15,28 @@ const SignUpScreen = () => {
         <Input label={"Password*"} placeholder={""} value="Marry Doe" />
         <Input label={"Company name"} placeholder={""} value="Marry Doe" />
         <div className="agency">
-  <p>Are you an agency? *</p>
+          <p>Are you an agency? *</p>
 
-  <div className="radio-group">
-    <label className="radio-item">
-      <input type="radio" name="agency" />
-      <span className="custom-radio"></span>
-      Yes
-    </label>
+          <div className="radio-group">
+            <label className="radio-item">
+              <input type="radio" name="agency" />
+              <span className="custom-radio"></span>
+              Yes
+            </label>
 
-    <label className="radio-item">
-      <input type="radio" name="agency" />
-      <span className="custom-radio"></span>
-      No
-    </label>
-  </div>
-</div>
+            <label className="radio-item">
+              <input type="radio" name="agency" />
+              <span className="custom-radio"></span>
+              No
+            </label>
+          </div>
+        </div>
       </form>
-      <Button text={"Create Account"} onClick={() => navigate("/profile")} />
+      <Button
+        text={"Create Account"}
+        variant="signupbtn"
+        onClick={() => navigate("/profile")}
+      />
     </MainLayout>
   );
 };

@@ -102,6 +102,11 @@
 
 /* PRIMARY BUTTON */
 .btn.createBtn {
+  background-color: #6C25FF;
+  color: #FFFFFF;
+}
+
+.btn.signupbtn {
   margin-top: 240px;
   background-color: #6C25FF;
   color: #FFFFFF;
