@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* MAIN CONTAINER */
+.app-container {
+  width: 375px;
+  height: 812px;
+  padding: 20px 20px;
+  background: #F7F8F9;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Rubik', sans-serif;
+  justify-self: center;
+}
+
+
+
+
+/* HEADING */
+.heading {
+  padding-top: 549px;
+  font-size: 27px;
+  line-height: 32px;
+  color: #1D2226;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* CONTENT TEXT */
+.content {
+  font-size: 18px;
+  color: #1D2226;
+  opacity: 0.6;
+  margin-bottom: 19px;
+  max-width: 232px;
+}
+
+/* SIGNUP HEADING */
+.heading-content {
+  width: 188px;
+  font-size: 27px;
+  font-weight: 600;
+  color: #1D2226;
+  margin-bottom: 14px;
+
+}
+
+/* INPUT WRAPPER */
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+.input-box input {
+  width: 335px;
+  height: 40px;
+  padding: 0 15px;
+  border: 1px solid #CBCBCB;
+  border-radius: 6px;
+  font-size: 12px;
+  outline: none;
+  background: transparent;
+  color: #000000;
+}
+
+/* PLACEHOLDER */
+.input-box input::placeholder {
+  color: #CBCBCB;
+}
+
+/* LABEL (border cut) */
+.input-box label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+
+  transform: translateY(-50%);
+  background: #F7F8F9;
+  padding: 0 6px;
+  font-size: 13px;
+  color: #6C25FF;
+  font-weight: 500;
+}
+
+/* BUTTON BASE */
+.btn {
+  width: 100%;
+  height: 46px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* PRIMARY BUTTON */
+.btn.createBtn {
+  margin-top: 240px;
+  background-color: #6C25FF;
+  color: #FFFFFF;
+}
+
+/* group under p */
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+/* label */
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* hide default radio */
+.radio-item input {
+  display: none;
+}
+
+/* OUTER CIRCLE (O shape) */
+.custom-radio {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #6C25FF;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+/* INNER FILLED DOT */
+.custom-radio::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #6C25FF;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease;
+}
+
+/* SHOW DOT WHEN SELECTED */
+.radio-item input:checked+.custom-radio::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* SECONDARY BUTTON */
+.btn.alreadyRegBtn {
+  background-color: #6C25FF4B;
+  color: #1D2226;
+}
+
+/* LOGIN BUTTON (disabled style) */
+.btn.loginbtn {
+  background: #CBCBCB;
+  font-size: 17px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+/* HEADER BAR (PROFILE PAGE) */
+.accountsetting {
+  padding-left: 15px;
+  width: 375px;
+  height: 68px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000007;
+  opacity: 1;
+  text-align: left;
+  align-content: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #1D2226;
+  text-transform: capitalize;
+}
+
+/* PROFILE CONTENT (optional use) */
+.profile-content {
+  padding: 20px 0;
+}
+
+/* Top Bar */
+.header {
+  width: 375px;
+  height: 68px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -19px;
+  left: -21px;
+  font-size: 18px;
+  color: #1D2226;
+}
+
+/* Card */
+.card {
+  left: -21px;
+  position: relative;
+  top: -19px;
+  width: 375px;
+  background: #F7F8F9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  height: 76px;
+  width: 76px;
+}
+
+.profile img {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  margin-left: 20px;
+}
+
+.profile-camera {
+  position: relative;
+  top: -23px;
+  left: 54px;
+  width: 21px;
+  height: 23px;
+  opacity: 1;
+}
+
+.username {
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  left: 85px;
+  top: -84px;
+  font-weight: 600;
+}
+
+.email {
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
+  color: #1D2226;
+  left: 85px;
+  position: relative;
+  top: -80px;
+}
+
+/* Description */
+.description {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1D2226;
+  font-family: 'Rubik', sans-serif;
+  top: -66px;
+  position: relative;
+}
