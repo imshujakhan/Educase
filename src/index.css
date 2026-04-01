@@ -38,6 +38,7 @@
 /* LOGIN HEADING */
 .signup-head {
   font-size: 27px;
+  width: 188px;
   font-weight: 600;
   color: #1D2226;
   margin-bottom: 10px;
@@ -96,6 +97,10 @@
   font-size: 13px;
   color: #6C25FF;
   font-weight: 500;
+}
+
+.required-star {
+  color: #DD4A3D;
 }
 
 /* BUTTON BASE */

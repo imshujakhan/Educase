@@ -15,7 +15,7 @@ const SignUpScreen = () => {
         <Input label={"Password*"} placeholder={""} value="Marry Doe" />
         <Input label={"Company name"} placeholder={""} value="Marry Doe" />
         <div className="agency">
-          <p>Are you an agency? *</p>
+          <p>Are you an agency? <span className="required-star">*</span></p>
 
           <div className="radio-group">
             <label className="radio-item">
