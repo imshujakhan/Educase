@@ -7,8 +7,8 @@ const LoginScreen = () => {
   const navigate = useNavigate();
   return (
     <MainLayout>
-      <h1 className="signuphead">Signin to your PopX account</h1>
-      <p className="logincontent">
+      <h1 className="signup-head">Signin to your PopX account</h1>
+      <p className="login-content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       </p>
       <form>
@@ -17,7 +17,7 @@ const LoginScreen = () => {
 
         <Button
           text={"Login"}
-          variant="loginbtn"
+          variant="login-btn"
           onClick={() => navigate("/profile")}
         ></Button>
       </form>

@@ -16,7 +16,7 @@ const LandingScreen = () => {
       <Button
         text={"Already Register? Login"}
         onClick={() => navigate("/login")}
-        variant="alreadyRegBtn"
+        variant="already-reg-btn"
       ></Button>
     </MainLayout>
   );

@@ -7,7 +7,7 @@ const SignUpScreen = () => {
   const navigate = useNavigate();
   return (
     <MainLayout>
-      <h1 className="heading-content">Create your PopX account</h1>
+      <h1 className="signup-heading">Create your PopX account</h1>
       <form action="">
         <Input label={"Full Name*"} placeholder={""} value="Marry Doe" />
         <Input label={"Phone number*"} placeholder={""} value="Marry Doe" />
@@ -34,7 +34,7 @@ const SignUpScreen = () => {
       </form>
       <Button
         text={"Create Account"}
-        variant="signupbtn"
+        variant="signup-btn"
         onClick={() => navigate("/profile")}
       />
     </MainLayout>

@@ -1,4 +1,4 @@
-const Button = ({ onClick, text ,variant="createBtn"}) => {
+const Button = ({ onClick, text, variant = "create-btn" }) => {
   return (
     <div>
       <button onClick={onClick} className={`btn ${variant} `}>
